@@ -41,8 +41,8 @@ const Weather = () => {
                 </div>
             </div>
             <div className="card__body">
-                <div className="card__body--icon">
-                    <FontAwesomeIcon icon={faCloud} size="6x" className="card__body--icon"/>
+                <div className="">
+                    <FontAwesomeIcon icon={faCloud} size="6x" className="card__body--cloudIcon"/>
                 </div>
                 <div className="card__body--content">
                     <span>{Math.round(temperature)}<sup>&#8451;</sup></span>

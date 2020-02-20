@@ -24,8 +24,12 @@ const Light = () => {
                 </div>
             </div>
             <div className="card__body">
-                <div className="card__body--icon">
-                    <FontAwesomeIcon icon={faLightbulb} size="6x" className="card__body--icon"/>
+                <div className="card__body--lightIcon">
+                    <FontAwesomeIcon 
+                        icon={faLightbulb} 
+                        size="6x" 
+                        className={isOn ? "active" : "inactive"}
+                    />
                 </div>
                 <div className="card__body--content">
                     {isOn ? <span>On</span> : <span>Off</span>}
@@ -33,12 +37,13 @@ const Light = () => {
                         onChange={handleChange} 
                         checked={isOn} 
                         uncheckedIcon={false} 
-                        checkedIcon={false} 
-                        onColor={'#009688'}/>
+                        checkedIcon={false}
+                        offColor={'#3c3c3c'} 
+                        onColor={'#103875'}/>
                 </div>
             </div>
             <div className="card__footer">
-                <p>Last updated few hours ago</p>
+                <p>Last updated few seconds ago</p>
             </div>
         </div>
     )
