@@ -1,17 +1,22 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import LoginPage from '../components/LoginPage'
 import Header from '../components/Header'
 import Home from '../components/Home'
 
+export const history = createBrowserHistory();
+
 const AppRouter = () => (
-    <BrowserRouter>
+    <Router history={history}>
         <div>
             <Header />
             <Switch>
-                <Route path="/" component={Home} exact={true}/>
+                <Route path="/" component={LoginPage} exact={true}/>
+                <Route path="/dashboard" component={Home} exact={true}/>
             </Switch>
         </div>
-    </BrowserRouter>
+    </Router>
 )
 
 export default AppRouter
