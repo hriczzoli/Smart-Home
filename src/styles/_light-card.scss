@@ -2,7 +2,7 @@
     background-color: #ffffff !important;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     .card__body {
-        padding: 0px 1.5rem;
+        padding: 0px;
         margin: 3px;
     }
 }
@@ -11,6 +11,17 @@
     svg {
         &.active {
             color: #FFC107;
+        }
+        &.inactive {
+            color: #5d5d5d;
+        }
+    }
+}
+
+.card__body--content {
+    span {
+        &.active {
+            color: #103875;
         }
         &.inactive {
             color: #5d5d5d;
@@ -33,5 +44,13 @@
 @media (min-width: 415px) {
     .light-card {
         width: 20%;
+    }
+}
+
+@media (min-width: 990px) {
+    .light-card {
+        .card__body {
+            padding: 0px 1rem;
+        }
     }
 }

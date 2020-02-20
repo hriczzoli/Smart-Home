@@ -32,7 +32,7 @@ const Light = () => {
                     />
                 </div>
                 <div className="card__body--content">
-                    {isOn ? <span>On</span> : <span>Off</span>}
+                    {isOn ? <span className="active">On</span> : <span className="inactive">Off</span>}
                     <Switch 
                         onChange={handleChange} 
                         checked={isOn} 
