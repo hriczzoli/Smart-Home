@@ -1,0 +1,18 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #103875;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    position: fixed;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 2;
+    .header-title {
+        color: white;
+        padding: 0 3rem;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}

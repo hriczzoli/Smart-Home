@@ -1,0 +1,120 @@
+.device-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: $m-size;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__header--title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6a6a6a;
+    margin: 0px;
+}
+
+.card__header__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle {
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+    border-radius: 50px;
+    background: #6a6a6a;
+}
+
+.card__header--info {
+    color: #bfc0bf;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0px;
+}
+
+.card__body--icon {
+    display: flex;
+    svg {
+        color: #103875;
+    }
+}
+
+.card__body--content {
+    display: flex;
+    flex-direction: column;
+    span {
+        font-size: 4rem;
+        color: #103875;
+        sup {
+            font-size: 2rem;
+            color: #5d5d5d;
+        }
+    }
+    p {
+        margin: 0px;
+        color: #5d5d5d;
+    }
+}
+
+.card__body--details {
+    display: flex;
+    flex-direction: column;
+    p {
+        margin: 3px 0px;
+        color: #5d5d5d;
+    }
+}
+
+.card__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #5d5d5d;
+}
+
+.card__footer--indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-right: .5rem;
+    background: #fb0004;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(252, 164, 168,1);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(252, 164, 168,1);
+    box-shadow: 0px 0px 4px 2px rgba(252, 164, 168,1);
+    animation: backgroundChange 5s;
+    -webkit-animation: backgroundChange 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundChange
+    {
+    //   0%   {background: #fb0004;}
+      0%  {background: #bfc0bf;  box-shadow: 0px 0px 1px 1px rgba(106, 106, 106, 0.15);}
+      100% {background: #fb0004;}
+    }
+
+
+@media (min-width: 415px) {
+    .device-card {
+        width: 35%;
+    }
+}
