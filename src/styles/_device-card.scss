@@ -105,9 +105,9 @@
 
 @keyframes backgroundChange
     {
-    //   0%   {background: #fb0004;}
       0%  {background: #bfc0bf;  box-shadow: 0px 0px 1px 1px rgba(106, 106, 106, 0.15);}
-      100% {background: #fb0004;}
+      50% {background: #fb0004; box-shadow: 0px 0px 4px 2px rgba(252, 164, 168,1);}
+      100% {background: #bfc0bf;  box-shadow: 0px 0px 1px 1px rgba(106, 106, 106, 0.15);}
     }
 
 
