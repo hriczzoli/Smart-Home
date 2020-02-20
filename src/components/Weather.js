@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloud } from '@fortawesome/free-solid-svg-icons'
+import moment from 'moment'
 
 const Weather = () => {
+    const [location, setLocation] = useState('City')
     const [temperature, setTemperature] = useState(0)
     const [feelsLike, setFeelsLike] = useState(0)
     const [precip, setPrecip] = useState(0)
@@ -15,6 +17,7 @@ const Weather = () => {
         //   .then(response => response.json())
         //   .then(response => {
         //       console.log(response)
+        //       setLocation(response.location.name)
         //       setTemperature(response.current.temperature)
         //       setFeelsLike(response.current.feelslike)
         //       setPrecip(response.current.precip)
@@ -31,8 +34,8 @@ const Weather = () => {
         <div className="device-card">
             <div className="card__header">
                 <div className="card__header__left">
-                    <p className="card__header--title">Aalborg</p>
-                    <p className="card__header--info">Monday</p>
+                    <p className="card__header--title">{location.toUpperCase()}</p>
+                    <p className="card__header--info">{moment().format('dddd')}</p>
                 </div>
                 <div className="card__header__right">
                     <span className="circle"></span>
