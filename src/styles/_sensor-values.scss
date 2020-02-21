@@ -1,0 +1,51 @@
+.sensor-card {
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+}
+
+.sensor-card__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0px 1rem 1rem;
+}
+
+.sensor-card__body-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sensor-value__container {
+    width: 50%;
+}
+
+.sensor-value {
+    display: flex;
+    justify-content: space-between
+}
+
+.progress-bar {
+    display: flex;
+    position: relative;
+    height: inherit;
+    width: 20%;
+    margin-right: 2rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    border-top: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.filler {
+    margin-top: auto;
+    background: #009688;
+    width: 100%;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    transition: height .2s ease-in;
+}

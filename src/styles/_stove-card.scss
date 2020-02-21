@@ -1,0 +1,19 @@
+.stove {
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .sensor-value__container {
+        padding-left: 1rem;
+    }
+    .card__body {
+        margin: 0px;
+    }
+    .card__body--content {
+        margin-right: 5rem;
+        span {
+            font-size: 3rem;
+        }
+    }
+}

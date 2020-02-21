@@ -4,6 +4,7 @@
     .card__body {
         padding: 0px;
         margin: 3px;
+        justify-content: space-around;
     }
     &:hover {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -54,6 +55,7 @@
     .light-card {
         .card__body {
             padding: 0px 1rem;
+            justify-content: space-between;
         }
     }
 }
