@@ -45,17 +45,18 @@
     left: 1px;
 }
 
-@media (min-width: 415px) {
-    .light-card {
-        width: 20%;
-    }
-}
-
 @media (min-width: 990px) {
     .light-card {
+        width: 20%;
         .card__body {
             padding: 0px 1rem;
             justify-content: space-between;
         }
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 770px) {
+    .light-card {
+        max-width: 30%;
     }
 }

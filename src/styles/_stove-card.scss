@@ -6,14 +6,17 @@
     }
     .sensor-value__container {
         padding-left: 1rem;
+        .sensor-value {
+            margin: 0.5rem 0px;
+        }
     }
     .card__body {
         margin: 0px;
     }
     .card__body--content {
-        margin-right: 5rem;
+        margin-right: 4.5rem;
         span {
-            font-size: 3rem;
+            font-size: 4rem;
         }
     }
 }

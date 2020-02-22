@@ -40,8 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "wappsto-cli": "^1.2.0"
-  },
   "proxy": "https://www.seluxit.com"
 }

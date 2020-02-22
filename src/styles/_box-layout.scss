@@ -34,5 +34,9 @@
     border-color: $divider-color;
 }
 .box-layout__input:focus {
-    border-color: $primary-color;
+    border-color: #103875;
+}
+
+.error {
+    color: #D32F2F;
 }
