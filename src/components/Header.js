@@ -1,3 +1,13 @@
+/*
+    This is the component for the header
+    It consumes values from the context and displays username, also uses 'history' from the router to change screens
+    Also conditionally renders the username and a user icon
+        (if user is 'logged in' -> 
+         there's a dropdown menu displayed after clicking on the user icon -> 
+         to 'log out' the user and return to 'Login Page'
+        )
+*/
+
 import React, { useContext, useState } from 'react';
 import UsersContext from '../context/user-context'
 import { history } from '../routers/AppRouter';
@@ -12,7 +22,7 @@ const Header = () => {
 
     const handleLogOut = () => {
         dispatch({
-            type: 'ADD_USER',
+            type: 'REMOVE_USER',
             user: false
         })
         setIsActive(!isActive)
@@ -24,10 +34,10 @@ const Header = () => {
             <p className="header-title">Smart Home</p>
             <div className="user-info">
             <span className="userName">{users.user}</span>
-                {users ? <div className="userCircle" onClick={handleClick}>
+                {users && <div className="userCircle" onClick={handleClick}>
                     <div className="face-circle"></div>
                     <div className="body"></div>
-                    </div> : <span></span>
+                    </div>
                 }
                 <div className={isActive ? 'dd-menu active' : 'dd-menu'}>
                     <ul>

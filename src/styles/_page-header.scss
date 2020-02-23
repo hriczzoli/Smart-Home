@@ -1,8 +1,12 @@
+/*
+  Styles of the page-header and the dropdown menu
+*/
+
 .page-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #103875;
+    background-color: $primary-color;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -10,59 +14,59 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     z-index: 2;
     .header-title {
-        color: white;
-        padding: 0 3rem;
-        font-weight: bold;
-        font-size: 2rem;
+      color: white;
+      padding: 0 3rem;
+      font-weight: bold;
+      font-size: 2rem;
     }
     .userName {
-        color: white;
-        padding: 0 2rem;
-        font-weight: bold;
-        font-size: 1.2rem;
+      color: white;
+      padding: 0 2rem;
+      font-weight: bold;
+      font-size: 1.2rem;
     }
 }
 .user-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 3rem;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .userCircle{
-    background: #ffffff;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+  background: #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 .face-circle{
-    height: 5px;
-    width: 5px;
-    border: .5em solid transparent;
-    border-radius: 50%;
-    background: $primary-color;
-    z-index: 3;
+  height: 5px;
+  width: 5px;
+  border: .5em solid transparent;
+  border-radius: 50%;
+  background: $light-primary;
+  z-index: 3;
 }
 .body{
-    position: relative;
-    height: 10px;
-    z-index: 2;
-    width: 25px;
-    background: $primary-color;
-    border-radius: 2em 2em 0 0;
+  position: relative;
+  height: 10px;
+  z-index: 2;
+  width: 25px;
+  background: $light-primary;
+  border-radius: 2em 2em 0 0;
 }
 
 .dd-menu {
-    position: absolute;
+  position: absolute;
   top: 70%;
   right: 20px;
   z-index: 1000;
@@ -74,39 +78,40 @@
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.175);
   background-clip: padding-box;
-    -webkit-transition: all 0.2s ease;
-    opacity:0;
-    -webkit-transform-origin: right top 0px; 
-    -webkit-transform: scale(0); 
+  -webkit-transition: all 0.2s ease;
+  opacity:0;
+  -webkit-transform-origin: right top 0px; 
+  -webkit-transform: scale(0); 
 }
-  .dd-menu ul {
-    min-width: 160px;
+.dd-menu ul {
+  min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-    position:relative;
-  }
+  position:relative;
+}
   
-  .dd-menu.active {
-    opacity:1;
-    -webkit-transform-origin: right top 0px; 
-    -webkit-transform: scale(1); 
-  }
+.dd-menu.active {
+  opacity:1;
+  -webkit-transform-origin: right top 0px; 
+  -webkit-transform: scale(1); 
+}
   
-  .dd-menu li {
-    color:#666;
+.dd-menu li {
+  color:#666;
   margin: 0;
   padding: 5px 0 5px 15px;
   height: 24px;
   list-style: none;
-    opacity: 0; 
-    transform: translateY(0px);
-  }
-  .dd-menu li {
-    -webkit-transition: all 0.3s ease;
-    transform: translateY(-30%);
-  }
-  .dd-menu.active li {
-    opacity: 1; 
-    transform: translateY(0px);
-  }
+  opacity: 0; 
+  transform: translateY(0px);
+}
+.dd-menu li {
+  -webkit-transition: all 0.3s ease;
+  transform: translateY(-30%);
+}
+
+.dd-menu.active li {
+  opacity: 1; 
+  transform: translateY(0px);
+}

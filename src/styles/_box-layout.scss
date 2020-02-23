@@ -1,3 +1,8 @@
+/*
+    Creating a responsive layout
+    Also the styling of the login component can be found here
+*/
+
 .box-layout {
     background-size: cover;
     display: flex;
@@ -34,9 +39,9 @@
     border-color: $divider-color;
 }
 .box-layout__input:focus {
-    border-color: #103875;
+    border-color: $primary-color;
 }
 
 .error {
-    color: #D32F2F;
+    color: $error-color;
 }

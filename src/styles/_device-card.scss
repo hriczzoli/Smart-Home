@@ -1,9 +1,15 @@
+/*
+    Styling of the 'card' element which is the wrapper of every device's data
+    Also the blinking red dot animation of the weather component can be found here
+*/
+
 .device-card {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     border-style: none;
     width: 100%;
+    min-height: 17vh;
     background-color: #f5f5f5;
     padding: $m-size;
     margin: 1rem;
@@ -19,7 +25,7 @@
 .card__header--title {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #6a6a6a;
+    color: $primary-text;
     margin: 0px;
 }
 
@@ -33,11 +39,11 @@
     height: 4px;
     margin: 1px;
     border-radius: 50px;
-    background: #6a6a6a;
+    background: $primary-text;
 }
 
 .card__header--info {
-    color: #bfc0bf;
+    color: $secondary-text;
     font-size: 1rem;
     font-weight: 400;
     margin: 0px;
@@ -53,7 +59,7 @@
 
 .card__body--cloudIcon {
     display: flex;
-    color: #103875;
+    color: $primary-color;
 }
 
 .card__body--content {
@@ -61,7 +67,7 @@
     flex-direction: column;
     span {
         font-size: 4rem;
-        color: #103875;
+        color: $primary-color;
         sup {
             font-size: 2rem;
             color: #5d5d5d;

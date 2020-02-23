@@ -1,3 +1,8 @@
+/*
+    Styling of the 'light switch' component - it modifies the base 'device-card' styles
+    Also styles the switch control
+*/
+
 .light-card {
     background-color: #ffffff !important;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -55,7 +60,7 @@
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 770px) {
+@media screen and (min-width: 760px) and (max-width: 990px) {
     .light-card {
         max-width: 30%;
     }

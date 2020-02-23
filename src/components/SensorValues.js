@@ -1,3 +1,11 @@
+/*
+    This is the component for the Indoor module's values
+    It gets the values as a prop from it's parent component and renders them
+    (there's a bit of conditional rendering as the values of 'Alarm' and 'Color indicator' 
+     do not need to be displayed together with the actual sensor values
+    )
+*/
+
 import React from 'react'
 
 const SensorValues = (value) => {

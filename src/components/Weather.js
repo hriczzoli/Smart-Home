@@ -1,3 +1,10 @@
+/*
+    This is the component for the 'Weather forecast'
+    It fetches data from the Weatherstack API using the 'Fetch API' to display actual weather data
+     (would have used OpenWeatherMap - but ran out of requests allocated for the free tier)
+    Also using moment.js here to display the current day of the week
+*/
+
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloud } from '@fortawesome/free-solid-svg-icons'
@@ -12,22 +19,23 @@ const Weather = () => {
     const [wind, setWind] = useState(0)
 
     useEffect(() => {
-        // async function fetchData() {
-        //   await fetch("http://api.weatherstack.com/current?access_key=b13f21dddfcbe0473a284618c6e3e069&query=Aalborg")
-        //   .then(response => response.json())
-        //   .then(response => {
-        //       console.log(response)
-        //       setLocation(response.location.name)
-        //       setTemperature(response.current.temperature)
-        //       setFeelsLike(response.current.feelslike)
-        //       setPrecip(response.current.precip)
-        //       setHumidity(response.current.humidity)
-        //       setWind(response.current.wind_speed)
-        //   })
+        //Asynchronously fetching weather data using 'Fetch API'
+        async function fetchData() {
+          await fetch("http://api.weatherstack.com/current?access_key=b13f21dddfcbe0473a284618c6e3e069&query=Aalborg")
+          .then(response => response.json())
+          .then(response => {
+              //Using the data coming back from the response we are setting values for the initial state of the component
+              setLocation(response.location.name)
+              setTemperature(response.current.temperature)
+              setFeelsLike(response.current.feelslike)
+              setPrecip(response.current.precip)
+              setHumidity(response.current.humidity)
+              setWind(response.current.wind_speed)
+          })
           
-        // }
+        }
     
-        // fetchData();
+        fetchData();
     }, []);
 
     return (

@@ -1,3 +1,8 @@
+/*
+    This is the component for the router
+    Essentially this is what enables us to create navigation in our application
+*/
+
 import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';

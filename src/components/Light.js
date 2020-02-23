@@ -1,3 +1,8 @@
+/*
+    This is the component for the 'Light switch'
+    Since it does not control an actual device, it basically only serves presentational purposes 
+*/
+
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +12,7 @@ const Light = () => {
     const [isOn, setIsOn] = useState(false)
 
     const handleChange = () => {
+        //toggle on/off state on click of the switch controller and set the new state
         setIsOn(!isOn)
     }
 

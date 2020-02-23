@@ -1,3 +1,7 @@
+/*
+    Importing partial stylesheets -> as this is the file that is being compiled
+*/
+
 @import './base/settings';
 @import './base/base';
 @import './box-layout';
