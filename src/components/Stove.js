@@ -159,7 +159,6 @@ const Stove = () => {
         updateTemperature()
     }
 
-
     return (
         <div className="device-card stove">
             <div className="card__header">

@@ -45,6 +45,5 @@
   "proxy": "https://www.seluxit.com",
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  },
-  "homepage": "http://hriczzoli.github.io/Smart-Home"
+  }
 }
