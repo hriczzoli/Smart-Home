@@ -1,3 +1,5 @@
+![iPad view of the application](ipad-view.png)
+
 ### Smart Home Application
 
 An application built with React (create-react-app). It uses [context API, hooks, moment.js, WebSocket, Fetch API]
